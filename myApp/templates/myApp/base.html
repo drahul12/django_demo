@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	{% load static %}
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+
+	</head>
+	<body>
+
+	<nav class="fh5co-nav" role="navigation">
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-2">
+						<div id="fh5co-logo"><a href="{% url 'index' %}">Law<span>.</span></a></div>
+					</div>
+					<div class="col-xs-10 text-right menu-1">
+						<ul>
+							<li><a href="{% url 'index' %}">Home</a></li>
+							<li class="active"><a href="{% url 'about' %}">About</a></li>
+							<li class="btn-cta"><a href="#"><span>Login</span></a></li>
+							<li class="btn-cta"><a href="#"><span>Sign Up</span></a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</nav>
+
+		{% block content %}
+		{% endblock %}
+
+	<!-- jQuery -->
+	<script src="{% static 'js/jquery.min.js' %} "></script>
+	<!-- Bootstrap -->
+	<script src="{% static 'js/bootstrap.min.js' %} "></script>
+	</body>
+</html>
+
